@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-image: url('../images/twitter-patterns-3.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10px;
+   
+    
+}
+.calculatorInstruction{
+    width: 60%;
+   
+}
+.calculatorInstruction img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+.calculator{
+    margin-top: 15%;
+    background-color:#34d399d6;
+    border: 2px solid#34D399;
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    height: 60%;
+}
+.calculatorScreen{
+    width: 90%;
+    height:88px;
+    background-color:#F3F4F6;
+    border: 2px solid #34D399;
+     font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+   
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    overflow:auto;
+    
+}
+.calculatorScreen::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    height: 60%;
+   
+   
+    
+
+}
+.c{
+    width:30%;
+    height:90px ;
+    background-color:#F3F4F6 ;
+    border: none;
+     transition: background-color 0.3s, transform 0.2s; /* Smooth effect */
+     cursor: pointer;
+      border: 2px solid #34D399;
+       font-family: "Roboto";
+       font-weight: 800;
+       font-size: large;
+       font-style: italic;
+
+}
+.c:hover{
+    background-color:#ef9c9cfd;
+    transform: scale(1.05);
+}
+
+
+.c.active {
+    background-color:#ef9c9cfd ;
+    box-shadow: 0 0 5px #333;
+}
+/* styles/index.css */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .calculatorInstruction {
+    width: 90%;
+    
+  }
+
+  .calculator {
+    width: 90%;
+   
+  }
+
+  
+  
+}
